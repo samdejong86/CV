@@ -1,0 +1,201 @@
+\documentclass{article}
+
+%A Few Useful Packages
+\usepackage{marvosym}
+\usepackage{fontspec} 					%for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{fullpage}
+\usepackage{titlesec}					%custom \section
+
+\usepackage[left=0.75in, right=0.75in, top=0.75in, bottom=0.5in]{geometry}
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+%FONTS
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[
+SmallCapsFont = Fontin-SmallCaps.otf,
+BoldFont = Fontin-Bold.otf,
+ItalicFont = Fontin-Italic.otf
+]
+{Fontin.otf}
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+
+%-------------WATERMARK TEST [**not part of a CV**]---------------
+\usepackage[absolute]{textpos}
+
+\setlength{\TPHorizModule}{30mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+\textblockorigin{2mm}{0.65\paperheight}
+\setlength{\parindent}{0pt}
+
+\input{credentials}
+
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+
+\pagestyle{empty} % non-numbered pages
+
+\font\fb=''[cmr10]'' %for use with \LaTeX command
+
+%--------------------TITLE-------------
+\par{\centering
+		{\Huge Samuel \textsc{de Jong}
+	}\bigskip\par}
+
+%--------------------SECTIONS-----------------------------------
+
+\begin{tabular}{l}
+    \address \\
+    \phone \\
+    \email
+\end{tabular}
+
+\section{summary}
+Through six years of graduate school education and research, I have developed skills in:
+\begin{itemize}
+	\item
+	Creative problem solving and experimental design
+	\item
+	Developing detector systems and software to acquire and analyze data
+	\item
+        Quantitative analysis of large data sets
+	\item
+	Producing data visualizations using matplotlib and ROOT
+	\item
+	Programming and scripting with C++, python, and bash
+	\item
+	Collaborating with colleagues locally and internationally
+	\item
+	Presenting results at conferences and collaboration meetings
+	\item
+	Writing technical and academic documents
+	
+\end{itemize}
+
+\section{Experience}
+\begin{tabular}{p{14cm}l}
+ \textit{PhD Researcher}, University of Victoria & \textsc{Jan 2013 - May 2016} \\
+	 \	 \footnotesize{Designed, assembled, and commissioned thermal neutron detector system using tubes of helium-3 for the Belle II experiment. Developed and tested data acquisition system for helium-3 tubes. Oversaw deployment and operation of this detector system in Japan, and analyzed data recorded by them. Calibrated helium-3 tubes at UVic. Simulated helium-3 tubes and neutron source}&\\
+&\\
+
+  \textit{MSc Researcher}, University of Victoria & \textsc{Sept 2010 - Aug 2012}\\
+	 \footnotesize{Investigated a new technique in particle identification in gaseous detectors. Developed and tested algorithms to implement this new technique.}&\\
+&\\
+
+  \textit{Laboratory Instructor}, University of Victoria & \textsc{Sept 2010 - Apr 2016}\\
+	 \footnotesize{Instructed undergraduate students on proper laboratory technique and equipment use. Taught experiments in introductory physics, electricity and magnetism, and laboratory electronics. Evaluated student progress and graded lab reports.}&\\
+&\\
+
+
+
+\end{tabular}
+
+
+\section{Education}
+\begin{tabular}{p{14cm}l}	
+  Doctorate in \textsc{High Energy Physics}, \textbf{University of Victoria} & \textsc{May} 2017 \\
+ Thesis: ``Thermal Neutrons in Phase I of Belle II Commissioning'' &\\
+ \small Advisor: Prof. Michael Roney&\smallskip\\
+
+
+ Masters of Science in \textsc{High Energy Physics}, \textbf{University of Victoria} & \textsc{August} 2012\\
+ Thesis: ``Cluster Counting Studies in a SuperB Drift Chamber Prototype'' &\\
+ \small Advisor: Prof. Michael Roney&\smallskip\\
+
+
+ Bachelor of Science in \textsc{Applied Physics} with \textsc{Mathematics} minor, \normalsize\textbf{Carleton University} & \textsc{December} 2009\\
+
+\end{tabular}
+
+\section{Skills}
+\textbf{Computing} \\
+\begin{tabular}{r|l}
+Advanced Knowledge&\textsc{C++}, python, \textsc{ROOT}, \textsc{Linux}, Object Oriented Programming \\
+Intermediate Knowledge& \textsc{java}, Excel, EPICS, \textsc{Windows}, ubuntu, SL6, \textsc{bash},  {\fb \LaTeX}\setmainfont[SmallCapsFont=Fontin-SmallCaps.otf]{Fontin.otf}, svn, git, Virtual Machines,\\& \textsc{jupyter}, \textsc{xml}, Confluence \\
+Basic Knowledge& \textsc{html}, \textsc{MATLAB}, matplotlib, SQL\\
+
+\end{tabular}
+
+\textbf{Hardware}\\
+\begin{tabular}{r|l}
+ Expertise in & Detector development, DAQ software development \\	
+ Equipment & \textsc{Caen}, \textsc{VME}, \textsc{NIM}, Digitizers, Computer-Electronics interfaces, Power supplies \\
+\end{tabular}
+
+\textbf{Other}\\
+\begin{tabular}{l}
+ Particle Physics, Data analysis, Statistics, Public speaking, Problem solving, Collaborative research, Teaching\\	
+\end{tabular}
+	
+
+\section{Conferences and Presentations}
+
+During my PhD studies, I travelled to the KEK lab in Tsukuba, Japan for meetings of the Belle II collaboration on five separate occasions, and presented remotely many other times. At these meetings, I presented the status of the project that I had been working on to colleagues and answered questions about my project.
+
+
+
+\begin{tabular}{p{14cm}l}
+ \textit{Oral Presentation}, Canadian Association of Physics Annual Congress (Ottawa, ON) & 2016\\ \footnotesize{Presented results of experiments conducted at the KEK physics lab in Tsukuba, Japan.} &\smallskip\\
+
+ \textit{Oral Presentation}, Winter Nuclear and Particle Physics Conference (Montreal, QC) & 2012\\ \footnotesize{Presented results of experiments conducted at the TRIUMF physics lab in Vancouver, BC.} & \smallskip\\
+
+ \textit{Oral Presentation}, Canadian Association of Physics Annual Congress (Calgary AB)& 2012\\ \footnotesize{Presented results of experiments conducted at the TRIUMF physics lab in Vancouver, BC.} & \smallskip\\
+
+\textit{Poster Presentation}, University of Victoria (Victoria BC) & 2011 \\ \footnotesize{Presented an introduction to the SuperB experiment.} &\smallskip \\
+
+ \textit{Oral Presentation}, Canadian Undergraduate Physics Conference (Edmonton AB)& 2009\\ \footnotesize{Presented a summary of studies I had done for my BSc Honours project.} & \smallskip\\
+\end{tabular}
+
+\section{Field work}
+
+\begin{tabular}{p{14cm}l}
+ \textbf{TRIUMF}, Vancouver, Canada: Prototype drift chamber at M11 & 2011\\ \footnotesize{Performed shift work for recording data, adjusted beam settings to produce different particle momenta, changed the position of the prototype chamber, problem solved issues with the experiment} &\smallskip\\
+
+ \textbf{KEK}, Tsukuba, Japan: BEAST II Phase I & 2016\\ \footnotesize{Installed helium-3 tubes in the SuperKEKB commissioning detector, BEAST II. Performed data acquisition shifts, attended accelerator meetings, problem solved issues with the experiment} &\smallskip\\
+
+
+\end{tabular}
+
+
+
+\section{Publications}
+\begin{tabular}{p{14cm}l}
+  \textit{First Measurements of Beam Backgrounds at SuperKEKB} & 2017\\
+	 Vahsen, S., et al. &\smallskip\\
+
+
+
+ \textit{Improved particle identification using cluster counting in a full-length drift chamber prototype} & 2014\\
+Caron, J.-F., Hearty, C., Lu, P., So, R., Cheaib, R., Martin, J.-P., Faszer, W., \textbf{de Jong, S.}, Beaulieu, A., Roney, M., de Sangro, R., Felici, G.,  Finocchiaro, G., and Piccolo, M. &\smallskip\\
+
+
+ \textit{SuperB Technical Design Report} & 2013\\
+	{Baszczyk, M., et al.} &\smallskip\\
+
+\textit{Prospects for Observing the Standard Model Higgs Boson Decaying into $b\bar{b}$ Final States} & 2010 \\ \textit{Produced in Weak Boson Fusion with an Associated Photon at the LHC} &\\
+ {Asner, D.M., Cunningham, M., \textbf{de Jong, S.}, Randrianarivony, K., and Santamarina, C. }&\\
+
+
+\end{tabular}
+
+
+
+\section{Interests and Activities}
+\textbf{Professional:}
+Problem solving, Data analysis, Programming, Data acquisition systems, Hardware-software interface, Physics, Experimentation, Detector development, Simulation of detector systems, Research and development\\
+\textbf{Personal:}
+Photography, Science Fiction, Travel
+
+\vspace{\fill}
+\centering Samuel \textsc{de Jong} 2/2
+
+
+
+
+\end{document}
